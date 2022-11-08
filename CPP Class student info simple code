@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string.h>
+using namespace std;
+void getdata();
+void displaydata();
+class list
+{
+  int ID;
+   int age;
+ char name[100];
+
+public:
+   void getdata();
+   void displaydata();
+};
+void list::getdata()
+{
+   cout << "ENTER YOUR ID\n";
+   cin >> ID;
+   cout << "ENTER YOUR AGE\n";
+   cin >> age;
+   cout << "ENTER YOUR NAME\n";
+   cin >> name;
+}
+void list::displaydata()
+{
+   cout << "YOUR ID IS " << ID << endl;
+   cout << "YOUR AGE IS " << age << endl;
+   cout << "YOUR ID IS " << name << endl;
+}
+
+int main()
+{
+   list s1, s2;
+   s1.getdata();
+   s2.getdata();
+   cout << "\t\t\n";
+      s1.displaydata();
+      s2.displaydata();
+   return 0;
+}
